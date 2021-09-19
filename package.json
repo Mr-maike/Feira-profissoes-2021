@@ -1,0 +1,27 @@
+{
+  "name": "website-feira",
+  "version": "1.0.0",
+  "description": "Website para feira 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:css": "postcss public/css/tailwind.css -o public/css/style.css"
+  },
+  "keywords": [
+    "express",
+    "node-js",
+    "tailwindcss",
+    "website"
+  ],
+  "author": "Mr_Maike",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "mustache": "^4.2.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  }
+}
