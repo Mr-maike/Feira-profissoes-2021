@@ -1,0 +1,2 @@
+#Ignorar todos os arquivos do pacote Node
+node_modules
