@@ -106,6 +106,15 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
               <br />
               <br />
+        
+        <script type="text/javascript">
+          window.addEventListener("scroll", function(){
+              var header = document.querySelector("nav");
+              var a = document.querySelector("a");
+              header.classList.toggle("bg-white", window.scrollY > 0);
+              a.classList.toggle("text-black", window.scrollY > 0);
+          })
+      </script>
 
 </body>
 </html>
