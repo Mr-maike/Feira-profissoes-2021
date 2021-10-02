@@ -1,13 +1,18 @@
 const express = require('express')
 const exphbs = require('express-handlebars')
 const path = require('path')
-const news = require('./routes/news')
+
+//Manipulação das rotas
+const news = require('./routes/noticias')
+const help = require('./routes/ajuda')
+const contact = require('./routes/contato')
+const gallery = require('./routes/galeria')
 
 const app = express()
 
 app.set('views', path.join(__dirname, 'views'))
 app.engine('handlebars', exphbs())
-app.set('view engine', 'handlebars') // => Diz ao node que utliza-se os modelos Pug
+app.set('view engine', 'handlebars') // => Diz ao node que utliza-se os modelos handlebars
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.static('public'))
 
@@ -16,7 +21,10 @@ app.get('/', (require, response) => {
 })
 
 //Rotas
-app.use('/news', news)
+app.use('/noticias', news)
+app.use('/ajuda', help)
+app.use('/galeria', gallery)
+app.use('/contato', contact)
 
 //Tratamento de erros
 app.use(function(require, response, next) {
