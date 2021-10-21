@@ -34,6 +34,7 @@ app.use(function(require, response, next) {
 })
 
 const server = app.listen(process.env.PORT || 1601, () => {
+  //Ligar o server
   console.log(`[⚡] O servidor está rodando na porta ${server.address().port}`)
 })
 
