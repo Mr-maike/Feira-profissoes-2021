@@ -33,7 +33,7 @@ app.use(function(require, response, next) {
   response.status(404).render('404', {layout: false})
 })
 
-const server = app.listen(1601, () => {
+const server = app.listen(process.env.PORT || 1601, () => {
   console.log(`[⚡] O servidor está rodando na porta ${server.address().port}`)
 })
 
