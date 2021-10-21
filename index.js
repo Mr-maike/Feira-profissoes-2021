@@ -7,6 +7,7 @@ const news = require('./routes/noticias')
 const help = require('./routes/ajuda')
 const contact = require('./routes/contato')
 const gallery = require('./routes/galeria')
+const courses = require('./routes/cursos')
 
 const app = express()
 
@@ -25,6 +26,7 @@ app.use('/noticias', news)
 app.use('/ajuda', help)
 app.use('/galeria', gallery)
 app.use('/contato', contact)
+app.use('/cursos', courses)
 
 //Tratamento de erros
 app.use(function(require, response, next) {
