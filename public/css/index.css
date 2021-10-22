@@ -1,0 +1,78 @@
+.logo-name{
+    margin-left: 20px;
+    font-size: 35px;
+}
+#logo{
+    height: 80px;
+    width: 130px;
+}
+
+@media only screen and (max-width: 545px) {
+    .logo-name{
+        font-size: 30px;
+    }
+    #logo{
+        height: 70px;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .logo-name{
+        font-size: 28px;
+    }
+    #logo{
+        height: 70px;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .logo-name{
+        font-size: 26px;
+    }
+    #logo{
+        height: 60px;
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .logo-name{
+        font-size: 23px;
+    }
+    #logo{
+        height: 60px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .logo-name{
+        font-size: 22px;
+    }
+    #logo{
+        height: 50px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo-name{
+        font-size: 20px;
+    }
+    #logo{
+        height: 45px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .logo-name{
+        font-size: 17px;
+    }
+    #logo{
+        height: 40px;
+        width: 65px;
+    }
+}
