@@ -1,0 +1,52 @@
+.gradient {
+    background: linear-gradient(90deg, #e93c5a 0%, #f6b833 100%);
+}
+
+/* Style para ampliar imagem */
+    .dialogo{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 11111111;
+        opacity: 0;
+        pointer-events: none;
+        overflow: scroll;
+        transition: 1s;
+    }
+    .dialogo:target {
+        opacity: 1;
+        pointer-events: auto;
+        transition: 1s;
+    }
+    .imgfake{
+        position: relative;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    .imagemmodal{
+        display: block;
+        float: center;
+        width: 75%;
+    }
+    .fechar{
+        color: #ffffff;
+        position: absolute;
+        text-align: left;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+/* Botão ver mais */   
+    #mais{
+        display: none;
+    }
+
+/* FeedBack */
+#navAction{
+    background: linear-gradient(90deg, #1e7bcb 0%, #14a697 80%);
+}
+
