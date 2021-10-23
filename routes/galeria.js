@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (request, response) => {
-  response.send('olá')
+  response.render("galeria", {layout: false})
 })
 
 module.exports = router
