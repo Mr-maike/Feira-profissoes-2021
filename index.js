@@ -3,8 +3,6 @@ const exphbs = require('express-handlebars')
 const path = require('path')
 
 //Manipulação das rotas
-const news = require('./routes/noticias')
-const help = require('./routes/ajuda')
 const contact = require('./routes/contato')
 const gallery = require('./routes/galeria')
 const courses = require('./routes/cursos')
@@ -22,8 +20,6 @@ app.get('/', (require, response) => {
 })
 
 //Rotas
-app.use('/noticias', news)
-app.use('/ajuda', help)
 app.use('/galeria', gallery)
 app.use('/contato', contact)
 app.use('/cursos', courses)
