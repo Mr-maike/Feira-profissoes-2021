@@ -6,25 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/cursos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script defer src="../js/index.js"></script>
   <title>Lista de cursos - Seja bem-vindos</title>
-  <style>
-    .gradient {
-      background: linear-gradient(90deg, #e93c5a 0%, #f6b833 100%);
-    }
-  </style>
 </head>
-<body class="leading-normal tracking-normal text-white" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="leading-normal tracking-normal text-white gradient">
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
-        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
           <img src="img/logo.png" id="logo" alt="" height="70rem" width="120rem">
         </a>
         <a href="/">
-          <h1 class="text-black my-4 font-bold leading-tight" id="logoName">IV Feira de Profissões</h1>
+          <h1 class="logo-name text-black my-4 font-bold leading-tight">IV Feira de Profissões</h1>
         </a>
       </div>
       <div class="block lg:hidden pr-4">
@@ -53,7 +49,7 @@
           </li>
         </ul>
         <button id="navAction"
-          class="mx-auto text-black lg:mx-0 hover:underline bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <a href="cursos">Cursos</a>
         </button>
       </div>
@@ -61,16 +57,15 @@
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
   
-
   <!--Cards dos Cursos Barão-->
   <section class="min-h-screen flex flex-col justify-center p-2 pt-4 md:p-32 md:pt-4">
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-top: 90px; margin-left:36px">Barão de Mauá</h1>
+    <h1 class="text-5xl" id="tituloCurso" style="margin-top: 90px;">Barão de Mauá</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
-        <div
+        <div id="image1"
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso1.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -81,20 +76,10 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Barão de Mauá
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Gastronomia</div>
             <p class="text-gray-700 text-base">A graduação em Gastronomia do Centro Universitário Barão de Mauá apresenta uma proposta inovadora para o mercado regional e nacional. Com amplos laboratórios, apoio da tecnologia e espaços de aprendizado prático.</p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -103,7 +88,7 @@
       <div class=" w-full lg:max-w-full lg:flex py-12">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso2.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -113,7 +98,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Barão de Mauá
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Jogos Digitais</div>
             <p class="text-gray-700 text-base">O curso de jogos Digitais estimula a aprendizagem por meio da experiência. Em laboratórios de tecnologia, com softwares modernos e de alta performance, executam atividades práticas que englobam tanto o conteúdo da sala de aula quanto criações próprias, que são frutos da criatividade dos estudantes.
@@ -122,23 +107,13 @@
               <br><br>Em torno de 40% dos estudantes do curso atuam em estágios profissionais dentro de agências e outras empresas.
             </p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
       {{!-- Card 3 --}}
       <div class=" w-full lg:max-w-full lg:flex">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso3.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -148,7 +123,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Barão de Mauá
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Ciências Biológicas</div>
             <p class="text-gray-700 text-base">A Biologia é a ciência que estuda os seres vivos, a relação entre eles 
@@ -159,23 +134,13 @@
               como: pesquisa, manejo e conservação de fauna e flora, biotecnologia, saúde, meio ambiente, 
               educação ambiental, com ênfase na área de Biodiversidade e Meio Ambiente.</p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
       {{!-- Card 4 --}}
       <div class=" w-full lg:max-w-full lg:flex py-12">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso4.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -185,22 +150,12 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Barão de Mauá
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Ciência da Computação</div>
             <p class="text-gray-700 text-base">O Curso de Ciência da Computação da Barão de Mauá, apresenta uma sólida formação conceitual, 
               teórica e prática em diversas áreas da computação, voltada para o desenvolvimento de novas ferramentas, transferência de tecnologia 
               e solução de problemas computacionais de outras áreas de conhecimento.</p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -208,7 +163,7 @@
       <div class=" w-full lg:max-w-full lg:flex">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso5.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -218,7 +173,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Barão de Mauá
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Design Gráfico</div>
             <p class="text-gray-700 text-base">Por meio desta graduação os estudantes interagem com os mais modernos softwares do mercado, além de aprenderem todas as teorias e técnicas que envolvem a profissão. 
@@ -227,29 +182,19 @@
               <br><br>Os professores, além de ativos no mercado de trabalho, trazem para a sala de aula e laboratórios, métodos modernos e eficientes de aprendizagem e estímulo à criatividade.
             </p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
 
 
   <!--Cards dos Cursos Barro Branco-->
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Barro Branco</h1>
+    <h1 class="text-5xl" id="tituloCurso">Barro Branco</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso6.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -260,20 +205,11 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Barro Branco
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">PM</div>
-            <p class="text-gray-700 text-base"></p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
+            <p class="text-gray-700 text-base">O Curso de Formação de Oficiais (CFO) é realizado na Academia de Polícia Militar do Barro Branco (APMBB) e tem como objetivo formar os oficiais da Polícia Militar do Estado de São Paulo, que irão comandar e direcionar as ações da Instituição em tela.
+            Para ingressar no Curso de Formação de Oficiais da PM é preciso preencher os requisitos do edital, além de passar por todas as etapas do concurso, que são divididas entre: prova objetiva, prova dissertativa, teste de aptidão física, exame de saúde, exame psicológico, avaliação de conduta pessoal e análise de documentos. Todas as fases são eliminatórias e possuem um elevado grau de dificuldade, por isso é necessário estar bem preparado.</p>
           </div>
         </div>
       </div>
@@ -282,13 +218,13 @@
 
   <!--Cards dos Cursos Criar Redação-->
 
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Criar Redação</h1>
+    <h1 class="text-5xl" id="tituloCurso">Criar Redação</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso7.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -299,20 +235,10 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Criar Redação
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Curso de Redação</div>
-            <p class="text-gray-700 text-base"></p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
+            <p class="text-gray-700 text-base">O Criar Redação é o mais completo curso de língua portuguesa e ciências humanas do Brasil. É o único, em seu segmento, filiado ao Instituto Camões. É também, no interior do estado de São Paulo, referência para escolas, professores, alunos, pais e mídia. Nossa ligação com a Língua Portuguesa é tamanha que comemoramos nosso aniversário de fundação no dia 10 de junho, dia da Língua Portuguesa.</p>
           </div>
         </div>
       </div>
@@ -321,13 +247,13 @@
 
   <!--Cards dos Cursos Moura Lacerda-->
 
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Moura Lacerda</h1>
+    <h1 class="text-5xl" id="tituloCurso">Moura Lacerda</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso8.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -338,22 +264,16 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Moura Lacerda
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Direito</div>
-            <p class="text-gray-700 text-base">Com mais de dez anos de existência, o curso de Direito do Moura Lacerda já formou centenas de profissionais que, hoje, atuam nas mais diversas áreas do direito. Além disso, uma das características fundamentais do curso é a formação geral, que possibilita uma visão de mundo abrangente e abre novos horizontes para o aluno formado. Assim, o projeto pedagógico é constantemente atualizado e pensado visando todas as oportunidades que a área oferece, tanto no setor público, quanto no privado, mas sem deixar de lado o aspecto humano e o caráter social da profissão. As expressivas participações de nossos alunos nos exames da OAB, com bons índices absolutos de aprovação, refletem as boas condições de preparo para os alunos que estão interessados em seguir a carreira de advogado. E de fundamental importância, também, a sólida bagagem que os alunos conseguem construir para se prepararem para outros concursos e provas.
-              <br><br>O Bacharel em Direito poderá atuar como profissional liberal nos mais variados segmentos da sociedade: pessoas físicas, pessoas jurídicas de direito público, empresas e organizações não-governamentais, nacionais e internacionais; prestando assessoria e consultoria jurídicas ou integrando o corpo jurídico de empresas públicas ou privadas. Poderá, ainda, optar por uma carreira na área pública, como magistrado, promotor de justiça, procurador ou delegado de polícia. Além disso, o curso de Direito oferece, aos que já contam com outro curso superior, amplos conhecimentos para o avanço profissional nas carreiras específicas.
+            <p class="text-gray-700 text-base">Com mais de dez anos de existência, o curso de Direito do Moura Lacerda já formou centenas de profissionais que, hoje, atuam nas mais 
+              diversas áreas do direito. Além disso, uma das características fundamentais do curso é a formação geral, que possibilita uma visão de mundo abrangente e abre novos 
+              horizontes para o aluno formado. Assim, o projeto pedagógico é constantemente atualizado e pensado visando todas as oportunidades que a área oferece, tanto no setor 
+              público, quanto no privado, mas sem deixar de lado o aspecto humano e o caráter social da profissão. As expressivas participações de nossos alunos nos exames da OAB, 
+              com bons índices absolutos de aprovação, refletem as boas condições de preparo para os alunos que estão interessados em seguir a carreira de advogado. E de fundamental 
+              importância, também, a sólida bagagem que os alunos conseguem construir para se prepararem para outros concursos e provas.
             </p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -362,7 +282,7 @@
       <div class=" w-full lg:max-w-full lg:flex py-12">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso9.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -372,7 +292,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Moura Lacerda
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Medicina Veterinária</div>
             <p class="text-gray-700 text-base">A constante busca pela promoção da saúde animal, por meio da prevenção e tratamento das enfermidades, 
@@ -384,23 +304,13 @@
               pelo Moura Lacerda poderá atuar em Clínica e Cirurgia Veterinária, Zootecnia (Produção e Reprodução Animal), Medicina Veterinária Preventiva, 
               Inspeção e Tecnologia de Produtos de origem animal.</p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
       {{!-- Card 3 --}}
       <div class=" w-full lg:max-w-full lg:flex">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso10.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -410,7 +320,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Moura Lacerda
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Agronomia</div>
             <p class="text-gray-700 text-base">O curso de Agronomia do Centro Universitário Moura Lacerda orgulha-se de já ter formado centenas de Engenheiros Agrônomos que, 
@@ -423,23 +333,13 @@
               tenham formação, por exemplo, na área de Controle Biológico e Mecanização Agrícola e que, por meio da pesquisa, participem de importantes congressos e simpósios 
               nacionais.</p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
       {{!-- Card 4 --}}
       <div class=" w-full lg:max-w-full lg:flex py-12">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso11.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -449,22 +349,12 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Moura Lacerda
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Relações Internacionais</div>
             <p class="text-gray-700 text-base">O curso visa formar o Bacharel em Relações Internacionais para atuar na assessoria, gerenciamento ou direção em diversas 
               entidades públicas ou particulares, auxiliando em suas relações com membros, empresas, instituições ou entidades de outros países, relações que podem ser 
               de caráter econômico, político, social, militar ou cultural.</p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -472,7 +362,7 @@
       <div class=" w-full lg:max-w-full lg:flex">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso12.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -482,7 +372,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Moura Lacerda
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Ciências Econômicas</div>
             <p class="text-gray-700 text-base">Os oitenta anos de existência do curso de Ciências Econômicas do Moura Lacerda comprovam e atestam a excelência na formação de 
@@ -493,23 +383,13 @@
               Central e Receita Federal, e também em consultorias independentes sobre planejamento econômico, financeiro e administrativo. Estão também preparados para pesquisar 
               e analisar o mercado e a conjuntura econômica, prestando assessoria em economia e finanças.</p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
       {{!-- Card 6 --}}
-      <div class=" w-full lg:max-w-full lg:flex">
+      <div class=" w-full lg:max-w-full lg:flex py-12">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso13.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -519,7 +399,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Moura Lacerda
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Moda</div>
             <p class="text-gray-700 text-base">A formação do profissional de Moda deve ser ao mesmo tempo generalista, para que ele possa entender as diversas atividades que a criação 
@@ -531,16 +411,6 @@
             relação aos cursos tradicionais de Moda.
             </p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -549,13 +419,13 @@
 
   <!--Cards dos Cursos UNIP-->
 
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">UNIP</h1>
+    <h1 class="text-5xl" id="tituloCurso">UNIP</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso14.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -566,30 +436,17 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              UNIP
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Engenharia Civil</div>
             <p class="text-gray-700 text-base">O engenheiro civil é um profissional que atua como liberal ou como empregado, em empresas de caráter privado ou em estatais. 
               Na atividade profissional liberal, atua como consultor, responsável técnico de projetos e de obras e perito em apoio judiciário, dentre outras funções. 
               Pode ainda militar na área docente e ter acesso a cargos públicos, via concurso ou por indicação, dependendo do caso e da função.
-              <br><br>O engenheiro civil deve apresentar formação em ciências exatas, com o necessário conhecimento básico da causa científica, para que possa elaborar 
-              uma rotina de cálculo estrutural e reconhecer os limites técnicos de fórmulas empíricas e de programas para computadores, como exemplos de atividade de projeto. 
-              Deve desenvolver senso crítico e espírito de trabalho em equipe em, por exemplo, incorporação de projetos, quando normalmente é conhecido como “engenheiro de obras”.
               <br><br>Na UNIP, o corpo docente é composto por professores de excelência reconhecida na área, com destacada parcela de doutores, mestres e profissionais de diversas 
               áreas de atuação na engenharia civil, o que proporciona, portanto, aos futuros profissionais uma visão global de possibilidades de trabalho. Desta forma, atende-se, 
               dentro do contexto mundial contemporâneo, à formação ideal em Graduação, que é a do engenheiro generalista. Faça sua inscrição no curso de Engenharia Civil EAD ou 
               Presencial da UNIP!
             </p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -598,7 +455,7 @@
       <div class=" w-full lg:max-w-full lg:flex py-12">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso15.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -608,7 +465,7 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              UNIP
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Enfermagem</div>
             <p class="text-gray-700 text-base">•	Preparar profissionais éticos e competentes, capazes de contribuir para o desenvolvimento da região e o bem-estar e qualidade de vida de seus cidadãos;
@@ -621,23 +478,13 @@
               <br>•	Ser capaz de aprender continuamente, tanto na sua formação, quanto na sua prática profissional.
             </p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
       {{!-- Card 3 --}}
       <div class=" w-full lg:max-w-full lg:flex">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+          style="background-image: url('img/curso16.jpg'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
         </div>
         <div
           class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -647,23 +494,13 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              UNIP
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Nutrição</div>
             <p class="text-gray-700 text-base">O curso de graduação em Nutrição da UNIP procura estar sempre engajado para manter um currículo adequado às mudanças pelas quais 
               a sociedade vem passando, sem, contudo, deixar de priorizar a atenção dietética, tanto em nível individual quanto coletivo, por meio de ações integradas de prevenção, 
               promoção, proteção e reabilitação da saúde, nas diferentes fases do ciclo-vital e do processo saúde-doença, para atuar, de forma interdisciplinar,  em equipes 
               multiprofissionais e com prática integrada ao sistema de saúde local.</p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div> 
@@ -672,13 +509,13 @@
 
   <!--Cards dos Cursos SkyAngels-->
 
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Sky Angels</h1>
+    <h1 class="text-5xl" id="tituloCurso">Sky Angels</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso17.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -689,36 +526,27 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              Sky Angels
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Aeromoça</div>
-            <p class="text-gray-700 text-base">Desde que iniciamos, nós ajudamos inúmeras pessoas a alcançarem suas carreiras e seus sonhos.
+            <p class="text-gray-700 text-base" style="color: grey;">Desde que iniciamos, nós ajudamos inúmeras pessoas a alcançarem suas carreiras e seus sonhos.
               <br><br>Estamos empenhados em fornecer excelente educação, treinamento e recursos para que nossos alunos prosperem no mundo competitivo de hoje.
               <br><br>Com opções de programa flexíveis e ótimos instrutores, temos certeza de que ficará satisfeito com sua formação na Sky Angels escola de Aviação Civil.
+              <p style="white">s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s</p>
             </p>
-          </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
 
 
-    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">NAU</h1>
+    <h1 class="text-5xl" id="tituloCurso">NAU</h1>
     <div class="p-10">
       <!--Card 1-->
       <div class="w-full lg:max-w-full lg:flex ">
         <div
           class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          style="background-image: url('img/curso18.jpg'); border: 1px solid rgb(179, 179, 179);"
           title="Mountain">
         </div>
         <div
@@ -729,26 +557,83 @@
                 <path
                   d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
               </svg>
-              Members only
+              NAU
             </p>
             <div class="text-gray-900 font-bold text-xl mb-2">Curso Preparatório</div>
             <p class="text-gray-700 text-base">A NAU é uma "embarcação" que transporta jovens ávidos por crescimento profissional e conhecimento intelectual até a fonte de trabalho 
               e/ou aprendizagem. Um cursinho preparatório para o vestibular totalmente gratuito com objetivo de dar oportunidades para jovens talentos. </p>
           </div>
-          <div class="flex items-center">
-            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-            <div class="text-sm">
-              <p class="text-gray-900 leading-none">Maike</p>
-              <p class="text-gray-600">2021</p>
-            </div>
-            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <footer class="bg-white text-gray-600 body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img src="img/logo.png" alt="" width="70px" height="20px">
+          <span class="ml-2 text-xl">IV Feira de Profissões</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">"Acreditar é essencial, mas ter atitude é o que faz a diferença"</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-yellow-500 tracking-widest text-sm mb-3">SUPORTE</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Página de ajuda</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Feedback</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-red-500 tracking-widest text-sm mb-3">CURSOS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Enfermagem</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Medicina</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Direito</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Psicologia</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-blue-600 tracking-widest text-sm mb-3">SOBRE NÓS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Quem nós somos</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Parcerias</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-green-500 tracking-widest text-sm mb-3">REDES SOCIAIS</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a href="https://www.instagram.com/ivfeiraprofissoes/" target="_blank"
+                class="text-gray-600 hover:text-gray-800">Instagram</a>
+            </li>
+            <li>
+              <a href="https://github.com/Mr-maike/Feira-profissoes-2021" target="_blank"
+                class="text-gray-600 hover:text-gray-800">Github</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

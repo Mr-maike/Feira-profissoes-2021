@@ -16,15 +16,15 @@
 </head>
 <body class="leading-normal tracking-normal text-white gradient">
 
-  <!--Nav-->
+  <!--Navbar-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
-        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+        <a class="toggleColour text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/" style="color: black;">
           <img src="img/logo.png" id="logo" alt="" height="70rem" width="120rem">
         </a>
         <a href="/">
-          <h1 class="logo-name my-4 font-bold leading-tight text-black" >IV Feira de Profissões</h1>
+          <h1 class="logo-name my-4 font-bold leading-tight" >IV Feira de Profissões</h1>
         </a>
       </div>
       <div class="block lg:hidden pr-4">
@@ -48,13 +48,12 @@
               href="galeria">Galeria</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black font-bold no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
               href="contato">Contato</a>
           </li>
         </ul>
-         <button id="navAction"
-          class="mx-auto lg:mx-0 hover:underline bg-white text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-80
-           focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <button id="navAction"
+          class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <a href="cursos">Cursos</a>
         </button>
       </div>
@@ -74,9 +73,9 @@
         </div>
         <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
           <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-          <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+          <a class="text-red-500 leading-relaxed"> suribeirao@sesisp.org.br</a>
           <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-          <p class="leading-relaxed">+55 (16) 3603-7310</p>
+          <p class="leading-relaxed">+55 (16) 3603-7300</p>
         </div>
       </div>
     </div>
@@ -116,7 +115,6 @@
     <h3 class="my-4 text-3xl leading-tight">  
     </h3>
   </section>
-
 
 <!--Footer da Página HTML-->
   <footer class="bg-white text-gray-600 body-font">
@@ -185,5 +183,17 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("nav");
+      var a = document.querySelector("a");
+      var title = document.querySelector("h1")
+      header.classList.toggle("bg-white", window.scrollY > 0);
+      a.classList.toggle("text-black", window.scrollY > 0);
+      title.classList.toggle("text-black", window.scrollY > 0);
+    })
+  </script>
+  <script src="/js/sandwich.js"></script>
 </body>
 </html>

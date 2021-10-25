@@ -20,10 +20,10 @@
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
-          <img src="img/logo.png" alt="" height="70rem" width="120rem">
+          <img src="img/logo.png" id="logo" alt="" height="70rem" width="120rem">
         </a>
         <a href="/">
-          <h1 class="my-4 text-4xl font-bold leading-tight" id="logoName">IV Feira de Profissões</h1>
+          <h1 class="logo-name my-4 font-bold leading-tight" id="logoName">IV Feira de Profissões</h1>
         </a>
       </div>
       <div class="block lg:hidden pr-4">
@@ -40,20 +40,19 @@
         id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-black no-underline" href="#">Notícias</a>
+            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="/">Home</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black no-underline font-bold hover:text-gray-800 hover:text-underline py-2 px-4"
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
               href="galeria">Galeria</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-              href="#">Contato</a>
+              href="contato">Contato</a>
           </li>
         </ul>
         <button id="navAction"
-          class="mx-auto lg:mx-0 hover:underline bg-white text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-80
-           focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <a href="cursos">Cursos</a>
         </button>
       </div>
@@ -94,11 +93,7 @@
         <div class="flex w-full mb-20 flex-wrap">
           <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
             Fotos das feiras anteriores</h1>
-          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque doloribus sint suscipit hic sunt velit
-            facilis quos repellat totam voluptate laborum impedit voluptates facere corporis, fugiat voluptatem commodi
-            provident. Molestias itaque, fuga delectus id quaerat reprehenderit blanditiis quas ad praesentium, impedit
-            dolor voluptatibus ex? Ut repellat saepe magnam perspiciatis.</p>
+          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Confira as experiências passadas das edições anteriores da Feira de Profissões. Por conta da pandemia do novo Coronavírus, teremos uma restrição de público, limitando-se apenas aos estudantes do Centro educacional SESI 298.</p>
         </div>
         <div class="flex flex-wrap md:-m-2 -m-1">
           <div class="flex flex-wrap lg:w-1/2 sm:w-1/1 md:w-1/2 xl:w-1/2">
@@ -529,18 +524,12 @@
   </svg>
   <section class="container mx-auto text-center py-6 mb-12">
     <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-      Deseja receber notícias sobre a feira?
+      
     </h1>
     <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
-    <h3 class="my-4 text-3xl leading-tight">
-      Main Hero Message to sell yourself!
+    <h3 class="my-4 text-3xl leading-tight">   
     </h3>
-    <button
-      class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-      Action!
-    </button>
   </section>
 
   <footer class="bg-white text-gray-600 body-font">
@@ -609,7 +598,16 @@
       </div>
     </div>
   </footer>
-
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("nav");
+      var a = document.querySelector("a");
+      var title = document.querySelector("h1")
+      header.classList.toggle("bg-white", window.scrollY > 0);
+      a.classList.toggle("text-black", window.scrollY > 0);
+      title.classList.toggle("text-black", window.scrollY > 0);
+    })
+  </script>
   <script src="/js/sandwich.js"></script>
 
 </html>
