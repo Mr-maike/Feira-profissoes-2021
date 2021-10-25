@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="../js/index.js"></script>
   <title>Lista de cursos - Seja bem-vindos</title>
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #e93c5a 0%, #f6b833 100%);
+    }
+  </style>
 </head>
-<body class="leading-normal tracking-normal text-white gradient">
+<body class="leading-normal tracking-normal text-white" style="font-family: 'Source Sans Pro', sans-serif;">
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-          <img src="img/logo.png" alt="" height="100rem" width="150rem">
+          <img src="img/logo.png" id="logo" alt="" height="70rem" width="120rem">
+        </a>
+        <a href="/">
+          <h1 class="text-black my-4 font-bold leading-tight" id="logoName">IV Feira de Profissões</h1>
         </a>
       </div>
       <div class="block lg:hidden pr-4">
@@ -32,57 +41,714 @@
         id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Notícias</a>
+            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="/">Home</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-              href="#">Fotos</a>
+              href="galeria">Galeria</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-              href="#">Contato</a>
+              href="contato">Contato</a>
           </li>
         </ul>
         <button id="navAction"
-          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Feedback
+          class="mx-auto text-black lg:mx-0 hover:underline bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <a href="cursos">Cursos</a>
         </button>
       </div>
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
+  
 
-  <!--Cards dos Cursos-->
+  <!--Cards dos Cursos Barão-->
   <section class="min-h-screen flex flex-col justify-center p-2 pt-4 md:p-32 md:pt-4">
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-top: 90px; margin-left:36px">Barão de Mauá</h1>
     <div class="p-10">
-    <!--Card 1-->
-    <div class=" w-full lg:max-w-full lg:flex">
-      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https:picsum.photos/500/501')" title="Mountain">
-      </div>
-      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-        <div class="mb-8">
-          <p class="text-sm text-gray-600 flex items-center">
-            <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
-            </svg>
-            Members only
-          </p>
-          <div class="text-gray-900 font-bold text-xl mb-2">Odontologia</div>
-          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
         </div>
-        <div class="flex items-center">
-          <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
-          <div class="text-sm">
-            <p class="text-gray-900 leading-none">Maike</p>
-            <p class="text-gray-600">2021</p>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Gastronomia</div>
+            <p class="text-gray-700 text-base">A graduação em Gastronomia do Centro Universitário Barão de Mauá apresenta uma proposta inovadora para o mercado regional e nacional. Com amplos laboratórios, apoio da tecnologia e espaços de aprendizado prático.</p>
           </div>
-          <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
-            <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
-          </ul>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Card 2 --}}
+      <div class=" w-full lg:max-w-full lg:flex py-12">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Jogos Digitais</div>
+            <p class="text-gray-700 text-base">O curso de jogos Digitais estimula a aprendizagem por meio da experiência. Em laboratórios de tecnologia, com softwares modernos e de alta performance, executam atividades práticas que englobam tanto o conteúdo da sala de aula quanto criações próprias, que são frutos da criatividade dos estudantes.
+              <br><br>Além de tratar de linguagens de desenvolvimento de softwares, a graduação enfatiza a criação e desenvolvimento de ilustrações, que auxiliam o estudante a aumentar sua técnica e a capacidade criativa por meio de disciplinas cujos conteúdos são voltados para Artes, Criatividade e Programação. 
+              <br><br>Os projetos desenvolvidos envolvem a criação de jogos educativos, de aventura, de ação, de simulação 2D e 3D, entre outros. Além disso, prepara o estudante para gerenciar projetos de sistemas de entretenimento digital interativo, criação de roteiros e modelagens de personagens virtuais. 
+              <br><br>Em torno de 40% dos estudantes do curso atuam em estágios profissionais dentro de agências e outras empresas.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 3 --}}
+      <div class=" w-full lg:max-w-full lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Ciências Biológicas</div>
+            <p class="text-gray-700 text-base">A Biologia é a ciência que estuda os seres vivos, a relação entre eles 
+              e o meio ambiente, além dos processos e mecanismos que regulam a vida. 
+              O curso de Ciências Biológicas do Centro Universitário Barão de Mauá é oferecido em duas modalidades – 
+              Licenciatura e Bacharelado, com a possibilidade de conclusão das duas modalidades em 4 anos. 
+              O Bacharelado em Ciências Biológicas forma profissionais que podem atuar em diferentes áreas, 
+              como: pesquisa, manejo e conservação de fauna e flora, biotecnologia, saúde, meio ambiente, 
+              educação ambiental, com ênfase na área de Biodiversidade e Meio Ambiente.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 4 --}}
+      <div class=" w-full lg:max-w-full lg:flex py-12">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Ciência da Computação</div>
+            <p class="text-gray-700 text-base">O Curso de Ciência da Computação da Barão de Mauá, apresenta uma sólida formação conceitual, 
+              teórica e prática em diversas áreas da computação, voltada para o desenvolvimento de novas ferramentas, transferência de tecnologia 
+              e solução de problemas computacionais de outras áreas de conhecimento.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 5 --}}
+      <div class=" w-full lg:max-w-full lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Design Gráfico</div>
+            <p class="text-gray-700 text-base">Por meio desta graduação os estudantes interagem com os mais modernos softwares do mercado, além de aprenderem todas as teorias e técnicas que envolvem a profissão. 
+              <br><br>Com o desenvolvimento de Projetos Integradores os estudantes aplicam todo seu conhecimento em trabalhos reais que serão incorporados ao seu portfólio, facilitando assim sua entrada no mercado de trabalho. No decorrer do curso os projetos culminarão em exposições realizadas em espaços culturais da cidade. 
+              <br><br>O curso de graduação em Design Gráfico apresenta diversas oportunidades de estágios profissionais já nos primeiros semestres. 
+              <br><br>Os professores, além de ativos no mercado de trabalho, trazem para a sala de aula e laboratórios, métodos modernos e eficientes de aprendizagem e estímulo à criatividade.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+
+  <!--Cards dos Cursos Barro Branco-->
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Barro Branco</h1>
+    <div class="p-10">
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">PM</div>
+            <p class="text-gray-700 text-base"></p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--Cards dos Cursos Criar Redação-->
+
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Criar Redação</h1>
+    <div class="p-10">
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Curso de Redação</div>
+            <p class="text-gray-700 text-base"></p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--Cards dos Cursos Moura Lacerda-->
+
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Moura Lacerda</h1>
+    <div class="p-10">
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Direito</div>
+            <p class="text-gray-700 text-base">Com mais de dez anos de existência, o curso de Direito do Moura Lacerda já formou centenas de profissionais que, hoje, atuam nas mais diversas áreas do direito. Além disso, uma das características fundamentais do curso é a formação geral, que possibilita uma visão de mundo abrangente e abre novos horizontes para o aluno formado. Assim, o projeto pedagógico é constantemente atualizado e pensado visando todas as oportunidades que a área oferece, tanto no setor público, quanto no privado, mas sem deixar de lado o aspecto humano e o caráter social da profissão. As expressivas participações de nossos alunos nos exames da OAB, com bons índices absolutos de aprovação, refletem as boas condições de preparo para os alunos que estão interessados em seguir a carreira de advogado. E de fundamental importância, também, a sólida bagagem que os alunos conseguem construir para se prepararem para outros concursos e provas.
+              <br><br>O Bacharel em Direito poderá atuar como profissional liberal nos mais variados segmentos da sociedade: pessoas físicas, pessoas jurídicas de direito público, empresas e organizações não-governamentais, nacionais e internacionais; prestando assessoria e consultoria jurídicas ou integrando o corpo jurídico de empresas públicas ou privadas. Poderá, ainda, optar por uma carreira na área pública, como magistrado, promotor de justiça, procurador ou delegado de polícia. Além disso, o curso de Direito oferece, aos que já contam com outro curso superior, amplos conhecimentos para o avanço profissional nas carreiras específicas.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Card 2 --}}
+      <div class=" w-full lg:max-w-full lg:flex py-12">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Medicina Veterinária</div>
+            <p class="text-gray-700 text-base">A constante busca pela promoção da saúde animal, por meio da prevenção e tratamento das enfermidades, 
+              tem consequências diretas na qualidade de vida e bem-estar dos animais e também da população. Atuar na comunidade, promover pesquisas 
+              e aprofundamento científico em busca de novas tecnologias, cuidar dos animais e do controle da produção de alimentos são algumas das 
+              características que destacam o curso de Medicina Veterinária do Moura Lacerda e o colocam entre os melhores cursos do Estado de São Paulo, 
+              segundo o MEC. Essa posição de destaque se deve, sobretudo, a um projeto pedagógico constantemente atualizado para corresponder às realidades 
+              e necessidades regionais, mas sempre com visão ampliada para as constantes novidades e demandas da área. Assim, o médico veterinário formado 
+              pelo Moura Lacerda poderá atuar em Clínica e Cirurgia Veterinária, Zootecnia (Produção e Reprodução Animal), Medicina Veterinária Preventiva, 
+              Inspeção e Tecnologia de Produtos de origem animal.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 3 --}}
+      <div class=" w-full lg:max-w-full lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Agronomia</div>
+            <p class="text-gray-700 text-base">O curso de Agronomia do Centro Universitário Moura Lacerda orgulha-se de já ter formado centenas de Engenheiros Agrônomos que, 
+              hoje, estão bem posicionados no mercado de trabalho, em empresas nacionais e multinacionais. O sucesso do curso deve-se a dois fatores com os quais poucas 
+              instituições de ensino do interior paulista podem ter o privilégio de contar: um campus de 100 hectares, dos quais 25% são agricultáveis; e professores mestres 
+              e doutores experientes e dedicados ao ensino e à pesquisa. A prática no campo, o plantio de culturas como milho, feijão, soja, cana-de-açúcar, café, fruteiras 
+              e hortaliças, seringueira e outras fazem parte do dia a dia do aluno de Agronomia. O curso de Agronomia foi reconhecido pelo índice Ruf da Folha de São Paulo 
+              como o melhor das universidades privadas do Estado de São Paulo em 2019. A tecnologia também está presente: diversos laboratórios e uma estação agroclimatológica 
+              ficam a serviço dos alunos, garantindo, assim, a possibilidade de realização de projetos e experimentos sem sair do Campus. Tudo isso possibilita que os alunos 
+              tenham formação, por exemplo, na área de Controle Biológico e Mecanização Agrícola e que, por meio da pesquisa, participem de importantes congressos e simpósios 
+              nacionais.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 4 --}}
+      <div class=" w-full lg:max-w-full lg:flex py-12">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Relações Internacionais</div>
+            <p class="text-gray-700 text-base">O curso visa formar o Bacharel em Relações Internacionais para atuar na assessoria, gerenciamento ou direção em diversas 
+              entidades públicas ou particulares, auxiliando em suas relações com membros, empresas, instituições ou entidades de outros países, relações que podem ser 
+              de caráter econômico, político, social, militar ou cultural.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 5 --}}
+      <div class=" w-full lg:max-w-full lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Ciências Econômicas</div>
+            <p class="text-gray-700 text-base">Os oitenta anos de existência do curso de Ciências Econômicas do Moura Lacerda comprovam e atestam a excelência na formação de 
+              economistas! Essa tradição, que se renova constantemente, somada a um projeto pedagógico dinâmico e ao prestígio que o Moura Lacerda tem na comunidade, por si 
+              só já são grandes diferenciais para o aluno. Mas o curso vai além: é alinhado com um dos cursos de Relações Internacionais mais importantes da região, 
+              possibilitando a dupla graduação e garantindo um diploma reconhecido pelo mercado de trabalho e respeitado nas melhores empresas. Desde 1932, nossos economistas 
+              estão nas principais empresas de Ribeirão Preto e região, ou espalhados pelo Brasil, ocupando cargos em órgãos do governo, como secretarias, ministérios, Banco 
+              Central e Receita Federal, e também em consultorias independentes sobre planejamento econômico, financeiro e administrativo. Estão também preparados para pesquisar 
+              e analisar o mercado e a conjuntura econômica, prestando assessoria em economia e finanças.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 6 --}}
+      <div class=" w-full lg:max-w-full lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Moda</div>
+            <p class="text-gray-700 text-base">A formação do profissional de Moda deve ser ao mesmo tempo generalista, para que ele possa entender as diversas atividades que a criação 
+              e a produção de Moda envolvem , e especialista, para facilitar sua colocação no mercado de trabalho. A primeira é baseada, sobretudo, nas disciplinas de formação cultural, 
+              humanista e tecnológica; a segunda deve desenvolver as potencialidades individuais dentro do contexto do mercado .
+            <br><br>Optamos por uma formação que contemple ao mesmo tempo as áreas de design e de negócios. A primeira recobre a área de criação; os profissionais de Moda que se dedicarem 
+            ao design deverão ser capazes de transformar informações sobre comportamento, tecnologia e tendências em produtos adaptados às condições da empresa em que atuam e ao mercado 
+            para o qual se destinam. Já na área de negócios, os alunos aprenderão sobre administração mercadológica e desenvolvimento de produtos, sendo este um grande diferencial em 
+            relação aos cursos tradicionais de Moda.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!--Cards dos Cursos UNIP-->
+
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">UNIP</h1>
+    <div class="p-10">
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Engenharia Civil</div>
+            <p class="text-gray-700 text-base">O engenheiro civil é um profissional que atua como liberal ou como empregado, em empresas de caráter privado ou em estatais. 
+              Na atividade profissional liberal, atua como consultor, responsável técnico de projetos e de obras e perito em apoio judiciário, dentre outras funções. 
+              Pode ainda militar na área docente e ter acesso a cargos públicos, via concurso ou por indicação, dependendo do caso e da função.
+              <br><br>O engenheiro civil deve apresentar formação em ciências exatas, com o necessário conhecimento básico da causa científica, para que possa elaborar 
+              uma rotina de cálculo estrutural e reconhecer os limites técnicos de fórmulas empíricas e de programas para computadores, como exemplos de atividade de projeto. 
+              Deve desenvolver senso crítico e espírito de trabalho em equipe em, por exemplo, incorporação de projetos, quando normalmente é conhecido como “engenheiro de obras”.
+              <br><br>Na UNIP, o corpo docente é composto por professores de excelência reconhecida na área, com destacada parcela de doutores, mestres e profissionais de diversas 
+              áreas de atuação na engenharia civil, o que proporciona, portanto, aos futuros profissionais uma visão global de possibilidades de trabalho. Desta forma, atende-se, 
+              dentro do contexto mundial contemporâneo, à formação ideal em Graduação, que é a do engenheiro generalista. Faça sua inscrição no curso de Engenharia Civil EAD ou 
+              Presencial da UNIP!
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {{!-- Card 2 --}}
+      <div class=" w-full lg:max-w-full lg:flex py-12">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Enfermagem</div>
+            <p class="text-gray-700 text-base">•	Preparar profissionais éticos e competentes, capazes de contribuir para o desenvolvimento da região e o bem-estar e qualidade de vida de seus cidadãos;
+              <br>•	Conscientizar o aluno de sua responsabilidade social, na busca da compreensão das reais necessidades e dos caminhos para a inclusão social desenvolvendo atividades educacionais;
+              <br>•	Desenvolver ações de prevenção, promoção, proteção e reabilitação da saúde, tanto em nível individual quanto coletivo nas instâncias do sistema de saúde;
+              <br>•	Estar fundamentado na capacidade de tomar decisões visando o uso apropriado da força de trabalho, de medicamentos, de equipamentos, de procedimentos e de práticas eficazes que priorizam custo/benefício;
+              <br>•	Manter a confidencialidade das informações a ele confiadas, na interação com outros profissionais de saúde e o público em geral;
+              <br>•	Estar apto a assumir posições de liderança, sempre tendo em vista o bem estar da comunidade;
+              <br>•	Estar habilitado a fazer o gerenciamento e a administração da força de trabalho, dos recursos físicos e materiais e da informação, da mesma forma que deve estar apto a ser gestor, empregador e líder nas equipes de saúde;
+              <br>•	Ser capaz de aprender continuamente, tanto na sua formação, quanto na sua prática profissional.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{!-- Card 3 --}}
+      <div class=" w-full lg:max-w-full lg:flex">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);" title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Nutrição</div>
+            <p class="text-gray-700 text-base">O curso de graduação em Nutrição da UNIP procura estar sempre engajado para manter um currículo adequado às mudanças pelas quais 
+              a sociedade vem passando, sem, contudo, deixar de priorizar a atenção dietética, tanto em nível individual quanto coletivo, por meio de ações integradas de prevenção, 
+              promoção, proteção e reabilitação da saúde, nas diferentes fases do ciclo-vital e do processo saúde-doença, para atuar, de forma interdisciplinar,  em equipes 
+              multiprofissionais e com prática integrada ao sistema de saúde local.</p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+
+  <!--Cards dos Cursos SkyAngels-->
+
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">Sky Angels</h1>
+    <div class="p-10">
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Aeromoça</div>
+            <p class="text-gray-700 text-base">Desde que iniciamos, nós ajudamos inúmeras pessoas a alcançarem suas carreiras e seus sonhos.
+              <br><br>Estamos empenhados em fornecer excelente educação, treinamento e recursos para que nossos alunos prosperem no mundo competitivo de hoje.
+              <br><br>Com opções de programa flexíveis e ótimos instrutores, temos certeza de que ficará satisfeito com sua formação na Sky Angels escola de Aviação Civil.
+            </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h1 class="text-5xl" style="color: #1e7bcb; margin-left:36px">NAU</h1>
+    <div class="p-10">
+      <!--Card 1-->
+      <div class="w-full lg:max-w-full lg:flex ">
+        <div
+          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https:picsum.photos/500/501'); border: 1px solid rgb(179, 179, 179);"
+          title="Mountain">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <p class="text-sm text-gray-600 flex items-center">
+              <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+              </svg>
+              Members only
+            </p>
+            <div class="text-gray-900 font-bold text-xl mb-2">Curso Preparatório</div>
+            <p class="text-gray-700 text-base">A NAU é uma "embarcação" que transporta jovens ávidos por crescimento profissional e conhecimento intelectual até a fonte de trabalho 
+              e/ou aprendizagem. Um cursinho preparatório para o vestibular totalmente gratuito com objetivo de dar oportunidades para jovens talentos. </p>
+          </div>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="img/Maike.jpg" alt="Avatar of Writer">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Maike</p>
+              <p class="text-gray-600">2021</p>
+            </div>
+            <ul class="flex flex-row flex-wrap justify-center mt-8 ml-4">
+              <li class="inline-block px-4 py-1 bg-pink-900"><i class="fa fa-tag"></i>Tailwind</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 </body>
 </html>
